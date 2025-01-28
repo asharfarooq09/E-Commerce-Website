@@ -1,0 +1,21 @@
+.description-box {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.description-box-navigator {
+  display: flex;
+}
+
+.description-box-navigator p {
+  border: 1px solid #747a83;
+  border-bottom: none;
+  color: #374151;
+  padding: 14px;
+}
+
+.description-box-description {
+  border: 1px solid #747a83;
+  padding: 25px;
+  color: #374151;
+}

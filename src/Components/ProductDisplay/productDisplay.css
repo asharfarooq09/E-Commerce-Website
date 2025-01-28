@@ -1,0 +1,146 @@
+.productContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productdisplay {
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.productdisplay-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1; */
+  width: 48%;
+  min-width: 320px;
+  gap: 15px;
+}
+
+.productdisplay-image .side-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95px;
+  gap: 16px;
+}
+
+.productdisplay-image .side-images img {
+  height: 97px;
+}
+
+.productdisplay-image .main-image {
+  display: flex;
+  flex: 2;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.productdisplay-image .main-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.productdisplay-details {
+  display: flex;
+  justify-content: center;
+  width: 48%;
+  min-width: 320px;
+  flex-direction: column;
+}
+
+.productdisplay-details h2 {
+  margin-bottom: 10px;
+}
+
+.details-review span {
+  margin-left: 5px;
+}
+
+.details-price {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  color: #374151;
+}
+
+.details-price .old_price {
+  text-decoration: line-through;
+  color: #ff4141;
+  font-weight: 600;
+}
+
+.details-detail {
+  color: #374151;
+}
+
+.details-size-addtocart {
+  margin: 18px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-size-addtocart h3 {
+  color: #374151;
+}
+
+.details-size-addtocart .sizes {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  font-size: 12px;
+  margin: 22px 0;
+  padding: 0;
+}
+
+.details-size-addtocart .sizes li {
+  border: 1px solid #374151;
+  padding: 8px 12px;
+  background-color: #f5f2f2;
+}
+
+.details-size-addtocart button {
+  cursor: pointer;
+  margin-top: 6px;
+  max-width: 150px;
+  font-size: 16px;
+  padding: 12px;
+  background: #ff4141;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.category {
+  margin-top: 24px;
+  color: #374151;
+}
+
+.tags {
+  color: #374151;
+}
+
+.category span {
+  font-weight: 700;
+}
+
+.tags span {
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .productdisplay-image .side-images {
+    display: none;
+  }
+}

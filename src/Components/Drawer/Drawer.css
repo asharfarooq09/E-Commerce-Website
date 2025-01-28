@@ -1,0 +1,25 @@
+.drawer {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.menu {
+  color: rgb(83, 83, 83);
+}
+
+.list-btn {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 980px) {
+  .drawer {
+    display: flex;
+  }
+}

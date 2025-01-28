@@ -1,0 +1,49 @@
+.card-total {
+  padding: 20px;
+  width: 40%;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-total h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: rgb(83, 83, 83);
+}
+
+.total-amount div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: rgb(83, 83, 83);
+}
+
+.total-amount hr {
+  margin: 10px 0;
+}
+
+.card-total button {
+  padding: 12px 24px;
+  background-color: #ff4141;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.card-total button:hover {
+  background-color: #ff4141;
+}
+
+@media (max-width: 480px) {
+  .card-total {
+    width: 60%;
+  }
+}

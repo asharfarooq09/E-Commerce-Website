@@ -1,0 +1,33 @@
+.related-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.related-product h2 {
+  font-size: 36px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.related-product h2::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 50%;
+  background: black;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.related-product-item {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

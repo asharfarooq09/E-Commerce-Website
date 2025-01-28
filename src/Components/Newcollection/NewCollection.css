@@ -1,0 +1,43 @@
+.new-collections {
+  display: flex;
+  width: 80%;
+  max-width: 1300px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.new-collections h2 {
+  font-size: 36px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.new-collections h2::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 50%;
+  background: black;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.collections {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .new-collections {
+    display: none;
+  }
+}
