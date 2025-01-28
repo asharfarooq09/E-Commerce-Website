@@ -5,6 +5,7 @@ export const ShopContext = createContext(null);
 
 const ShopContextProvider = (props) => {
   const [cartadditem, setcardadditem] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [action, setAction] = useState("Login");
   const [login, setLogin] = useState(() => {
     const user = localStorage.getItem("user");
@@ -32,6 +33,8 @@ const ShopContextProvider = (props) => {
 
   const ContextValue = {
     action,
+    isLoading,
+    setIsLoading,
     login,
     setLogin,
     setAction,
