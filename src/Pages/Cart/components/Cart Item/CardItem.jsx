@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import "./CardItem.css";
-import { ShopContext } from "../../Context/ShopContext";
-import remove_icon from "../assets/cart_cross_icon.png";
+import "./CartItem.css";
+import { ShopContext } from "../../../../Context/ShopContext";
+import remove_icon from "../../../../Components/assets/cart_cross_icon.png";
 
 const CardItem = ({ item }) => {
   const { cartadditem, RemovetoCart, replaceCart } = useContext(ShopContext);
@@ -10,7 +10,6 @@ const CardItem = ({ item }) => {
     const increment = type === "increment" ? 1 : -1;
 
     const index = cartadditem.findIndex((product) => product.id === item.id);
-    console.log(index);
     if (index < 0) return;
 
     const quan = cartadditem[index].quantity + increment;

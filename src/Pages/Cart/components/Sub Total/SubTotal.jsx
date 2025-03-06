@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./SubTotal.css";
-import { ShopContext } from "../../Context/ShopContext";
+import { ShopContext } from "../../../../Context/ShopContext";
 
 const SubTotal = () => {
-  const { getTotalAmount, cartadditem } = useContext(ShopContext);
+  const { getTotalAmount } = useContext(ShopContext);
   return (
     <div className="card-total">
       <h2>Card Totals</h2>

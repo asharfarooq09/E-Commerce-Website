@@ -1,10 +1,23 @@
+.cartPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 30px;
+}
+
 .cart {
   padding: 20px;
   max-width: 80%;
-  margin: 50px auto;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Nocart{
+  height: 400px;
+  width: 500px;
 }
 
 .cart-main-head {
@@ -56,6 +69,11 @@
   .card-total {
     width: 100%;
     text-align: center;
+  }
+
+  .Nocart{
+    height: 300px;
+    width: 300px;
   }
 }
 

@@ -15,12 +15,32 @@
   font-family: "Rubik Vinyl";
 }
 
+.drawer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.menu {
+  color: rgb(83, 83, 83);
+}
+
+.list-btn {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .nav-logo {
   height: 45px;
 }
 
-.nav-title {
+.nav-title a {
   font-size: 35px;
+  font-family: "Rubik Vinyl";
 }
 
 a {
@@ -137,6 +157,10 @@ a {
   color: #374151;
 }
 
+.cart-logo {
+  position: relative;
+}
+
 .nav-cart {
   display: flex;
   cursor: pointer;
@@ -146,18 +170,17 @@ a {
 .nav-cart-count {
   width: 18px;
   height: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -25px;
-  margin-left: -30px;
+  position: absolute;
+  top: -5px;
+  right: -8px;
   border-radius: 11px;
   background: #ff4141;
   font-size: 11px;
   color: #fff;
+  text-align: center;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 990px) {
   .navbar {
     width: 90%;
     padding: 0 10px;
@@ -168,7 +191,15 @@ a {
   }
 
   .nav-login-cart {
-    gap: 10px;
+    gap: 5px;
+  }
+
+  .cart-logo a {
+    width: 40px;
+  }
+
+  .drawer {
+    display: flex;
   }
 
   .nav-login {
@@ -178,28 +209,18 @@ a {
   .search-icon {
     font-size: 30px;
   }
-
-  .nav-cart-count {
-    width: 18px;
-    height: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -25px;
-    margin-left: -20px;
-    border-radius: 11px;
-    background: #ff4141;
-    font-size: 11px;
-    color: #fff;
-  }
 }
 
 @media only screen and (max-width: 500px) {
+  .navbar {
+    padding: 0;
+  }
+
   .nav-logo {
     height: 38px;
   }
 
-  .nav-title {
+  .nav-title a {
     font-size: 30px;
   }
 
@@ -216,28 +237,10 @@ a {
   }
 
   .nav-cart-count {
-    width: 18px;
-    height: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -25px;
-    margin-left: -20px;
-    border-radius: 11px;
-    background: #ff4141;
-    font-size: 11px;
-    color: #fff;
-  }
-
-  .nav-cart-count {
     width: 14px;
     height: 14px;
     font-size: 8px;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .navbar {
-    width: 90%;
+    top: -4px;
+    right: -6px;
   }
 }

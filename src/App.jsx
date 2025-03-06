@@ -5,26 +5,26 @@ import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
 import Product from "./Pages/Product";
 import LoginSignup from "./Pages/LoginSignup";
-import Cart from "./Pages/Cart";
 import Footer from "./Components/Footer/Footer";
 import banner_mens from "./Components/assets/banner_mens.png";
 import banner_women from "./Components/assets/banner_women.png";
 import banner_kids from "./Components/assets/banner_kids.png";
+import Cart from "./Pages/Cart/Cart";
 
 function App() {
   return (
-    <div>
+    <>
       <BrowserRouter>
         <AllRoutes />
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 
 function AllRoutes() {
   const location = useLocation();
   return (
-    <>
+    <div className="app">
       <Navbar />
       <Routes>
         <Route path="/" element={<Shop />} />
@@ -47,7 +47,7 @@ function AllRoutes() {
         <Route path="/login" element={<LoginSignup />} />
       </Routes>
       {location.pathname !== "/login" && <Footer />}
-    </>
+    </div>
   );
 }
 
