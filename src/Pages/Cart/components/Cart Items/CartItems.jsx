@@ -11,19 +11,14 @@ const CartItems = () => {
   return (
     <>
       <div className="cartPage">
-        {cartadditem.length > 0 ? (
-          <>
+        {cartadditem.length > 0 && 
             <div className="cart">
               <hr />
               {cartadditem.map((item) => {
                 return <CardItem key={item.id} item={item} />;
               })}
-            </div>
-            <SubTotal />
-          </>
-        ) : (
-          <img className="Nocart" src={NoCart} alt="" />
-        )}
+            </div> &&
+            <SubTotal />}
       </div>
     </>
   );
