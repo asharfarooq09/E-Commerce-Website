@@ -3,7 +3,6 @@ import { ShopContext } from "../../../../Context/ShopContext";
 import "./CartItems.css";
 import CardItem from "../Cart Item/CardItem";
 import SubTotal from "../Sub Total/SubTotal";
-import NoCart from "../../../../components/assets/empty_cart.png";
 
 const CartItems = () => {
   const { cartadditem } = useContext(ShopContext);
