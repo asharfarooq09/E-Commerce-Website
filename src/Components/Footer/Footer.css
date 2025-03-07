@@ -2,7 +2,7 @@
   width: 80%;
   max-width: 1300px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,6 +19,7 @@
 .logo-title h2 {
   font-size: 38px;
   font-family: "Rubik Vinyl";
+  color: black;
 }
 
 .footer .footer-items {
@@ -48,4 +49,10 @@
 
 .footer p {
   margin: 20px 0;
+}
+
+@media (max-width:440px){
+  .footer{
+    margin-top: 60px;
+  }
 }

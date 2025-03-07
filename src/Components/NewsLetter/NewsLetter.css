@@ -59,3 +59,9 @@
   background: black;
   border: none;
 }
+
+@media (max-width:440px){
+  .news-letter-container{
+    height: 50vh;
+  }
+}
