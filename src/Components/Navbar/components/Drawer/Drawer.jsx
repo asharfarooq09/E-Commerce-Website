@@ -64,7 +64,7 @@ const TemporaryDrawer = () => {
 
   return (
     <div className="drawer">
-        <MenuIcon className="menu" onClick={toggleDrawer(true)}></MenuIcon>
+      <MenuIcon className="menu" onClick={toggleDrawer(true)}></MenuIcon>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>

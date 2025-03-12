@@ -1,20 +1,19 @@
-import React, { useContext, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../Components/Hero/Hero";
 import Popular from "../Components/Popular/Popular";
 import Offer from "../Components/Offer/Offer";
 import NewCollection from "../Components/Newcollection/NewCollection";
 import NewsLetter from "../Components/NewsLetter/NewsLetter";
-import { ShopContext } from "../Context/ShopContext";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
-const Shop = (props) => {
-  const { isLoading, setIsLoading } = useContext(ShopContext);
+const Shop = () => {
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsLoading(false);
-    }, 1500); 
+    }, 1500);
     return () => clearTimeout(timeout);
   }, []);
 

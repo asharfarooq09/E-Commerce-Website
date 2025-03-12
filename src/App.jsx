@@ -10,6 +10,7 @@ import banner_mens from "./Components/assets/banner_mens.png";
 import banner_women from "./Components/assets/banner_women.png";
 import banner_kids from "./Components/assets/banner_kids.png";
 import Cart from "./Pages/Cart/Cart";
+import SearchItems from "./Pages/SearchItems";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function AllRoutes() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Shop />} />
+        <Route path="/searchItem/:query" element={<SearchItems />} />
         <Route
           path="/mens"
           element={<ShopCategory banner={banner_mens} category="men" />}

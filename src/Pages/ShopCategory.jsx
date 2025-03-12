@@ -7,7 +7,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import "./CSS/ShopCategory.css";
 
 const ShopCategory = (props) => {
-  const { all_product, isLoading, setIsLoading } = useContext(ShopContext);
+  const { all_product } = useContext(ShopContext);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
